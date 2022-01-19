@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Part Master Application</title>
+</head>
+<body>
+<h1>Part Details</h1>
+    <form action="#" th:action="@{/home/add}" th:object="${part}" method="post">
+        <label for="partName"> Part Name:</label><br>
+        <input type="text" th:field="*{partName}"/><br>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+<p>Welcome to <span th:text="${appName}">Our App</span></p>
+</body>
+</html>
